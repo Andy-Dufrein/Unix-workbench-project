@@ -8,15 +8,17 @@ function congrats {
 	rm out.log
 }
 
-echo "Hello, dear user. Let's play a little game. Try to guess, how many files are in directory. Please, write your estimated number: "
+echo "Hello, dear user. Let's play a little game. Write here, how many files are in directory."
+read dir
+echo "Now try to guess, how many files are in directory (lol). Please, write your estimated number: "
 read num
-while [[ $num -ne 3 ]]
+while [[ $num -ne $dir ]]
 do
 	if [[ ! $num =~ [0-9] ]]
 	then
 		echo "Please, write a NUMBER"
 	else
-		if [[ $num -gt 3 ]]
+		if [[ $num -gt $dir ]]
 		then
 			echo "I'm sorry, your number $num is bigger than my. Try again."
 		else
