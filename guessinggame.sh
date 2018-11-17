@@ -2,7 +2,7 @@
 # File: guessinggame.sh
 
 function congrats {
-	echo "My congratulations! Your guess is correct. Hope you enjoyed this game. Now, check out a README.md, please."
+	echo "My congratulations! Your guess is correct. Hope you enjoyed this game. Now, check out a README.md, please, and refresh it on github, after that the project page will change."
 	rm README.md
 	make > out.log 2> /dev/null
 	rm out.log
