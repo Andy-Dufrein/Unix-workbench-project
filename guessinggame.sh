@@ -3,6 +3,7 @@
 
 function congrats {
 	echo "My congratulations! Your guess is correct. Hope you enjoyed this game. Now, check out a README.md, please."
+	rm README.md
 	make > out.log 2> /dev/null
 	rm out.log
 }
